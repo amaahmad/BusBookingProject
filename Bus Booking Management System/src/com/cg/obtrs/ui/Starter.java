@@ -18,6 +18,7 @@ public class Starter {
 	     int temp=1;
 		CustomerService custService = new CustomerServiceImpl();
 		AdminService adminService = new AdminServiceImpl();
+		System.out.println("Enter your choice");
 		 while(temp>0)
 	      {
       System.out.println("1. Login as Admin");
@@ -32,27 +33,27 @@ public class Starter {
       		 switch(adminChoice)
       		 {
       		 case 1:
-      		  System.out.println("Enter Username");
-       	      String userName = input.next();
-       	      System.out.println("Enter Password");
-       	      String password = input.next();
-       	      System.out.println("Enter your Name");
-       	      String name = input.next();
-       	      System.out.println("Enter Phone number");
-       	      long phoneNo = input.nextLong();
-       	      System.out.println("Enter Email ID");
-       	      String email = input.next();
-       	      Random random = new Random();
-       	      int custId =  random.nextInt(1000);
-       	     System.out.println(adminService.adminSignUp(new AdminDTO(name, phoneNo, email, custId, userName, password))); 
-                  break;
-          case 2:  
-          System.out.println("Enter Username");
-          userName = input.next();
-          System.out.println("Enter Password");
-          password = input.next();
-          System.out.println(adminService.adminLogin(userName, password));
-	  
+      			 System.out.println("Enter Username");
+      			 String userName = input.next();
+      			 System.out.println("Enter Password");
+      			 String password = input.next();
+      			 System.out.println("Enter your Name");
+	       	     String name = input.next();
+	       	     System.out.println("Enter Phone number");
+	       	     long phoneNo = input.nextLong();
+	       	     System.out.println("Enter Email ID");
+	       	     String email = input.next();
+	       	     Random random = new Random();
+	       	     int custId =  random.nextInt(1000);
+	       	     System.out.println(adminService.adminSignUp(new AdminDTO(name, phoneNo, email, custId, userName, password))); 
+	                 break;
+      		 case 2:  
+      			 System.out.println("Enter Username");
+      			 userName = input.next();
+      			 System.out.println("Enter Password");
+      			 password = input.next();
+      			 System.out.println(adminService.adminLogin(userName, password));
+      			 
       		 }
              break;
       case 2 : System.out.println("1. Sign Up");
