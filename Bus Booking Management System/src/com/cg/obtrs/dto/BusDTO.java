@@ -13,10 +13,10 @@ public class BusDTO
   private String SeatNo;
   
   
-public BusDTO(Integer busId, String sourceStation, String destinationStation, String busType,
+public BusDTO(String sourceStation, String destinationStation, String busType,
 		Float fare, String seatNo) {
 	super();
-	this.BusId = busId;
+	
 	this.sourceStation = sourceStation;
 	this.destinationStation = destinationStation;
 	this.busType = busType;
