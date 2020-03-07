@@ -13,5 +13,7 @@ public interface BookingDAO
    
    public String displayFare(int age, BusDTO bus) throws CustomException;
    
-   public String checkSeatAvailability(BookingDTO booking, BusDTO bus);
+   public String checkSeatAvailability(BookingDTO booking, BusDTO bus) throws CustomException;
+   
+   public String cancelBooking(int busId) throws CustomException;
 } 
