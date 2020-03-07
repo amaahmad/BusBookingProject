@@ -3,9 +3,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-
+<<<<<<< HEAD
 import com.cg.obtrs.dto.BookingDTO;
 import com.cg.obtrs.dto.BusDTO;
+
 import com.cg.obtrs.dto.AdminDTO;
 
 import com.cg.obtrs.dto.CustomerDTO;
@@ -13,13 +14,13 @@ import com.cg.obtrs.dto.CustomerDTO;
 public class StaticDb 
 {
  static public ArrayList<CustomerDTO> custList = new ArrayList<>();
- 
  static public Map<Integer,BusDTO> busList = new HashMap<>(); 
- static public ArrayList<CustomerDTO> custArr = new ArrayList<>();
  static public ArrayList<AdminDTO> adminArr=new ArrayList<>();
- 
+ static public Map<Integer, BookingDTO> bookingList = new HashMap<>();
 
 }
+
+
 
 
  
