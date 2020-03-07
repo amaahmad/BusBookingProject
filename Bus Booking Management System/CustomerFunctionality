@@ -1,3 +1,47 @@
+//
+//public class Bus 
+//{
+//	private int busId;
+//	private String source;
+//	private String destiation;
+//	public int getBusId() {
+//		return busId;
+//	}
+//	public void setBusId(int busId) {
+//		this.busId = busId;
+//	}
+//	public String getSource() {
+//		return source;
+//	}
+//	public void setSource(String source) {
+//		this.source = source;
+//	}
+//	public String getDestiation() {
+//		return destiation;
+//	}
+//	public void setDestiation(String destiation) {
+//		this.destiation = destiation;
+//	}
+//	Bus()
+//	{
+//		super();
+//	}
+//	Bus(int busId, String source, String destination)
+//	{
+//		this.busId=busId;
+//		this.source=source;
+//		this.destiation=destination;
+//	}
+//	@Override
+//	public String toString() {
+//		return "BusId: " + busId + " Source: "+source+" Destiation: "+destiation+"\n";
+//	}
+//	
+//	
+//
+//}
+
+//Functionality
 String changePassword(String newPassword)
 	{
 		this.setPassword(newPassword);
