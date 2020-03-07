@@ -13,7 +13,7 @@ public class CustomerDAOImpl implements CustomerDAO
     }
 
 	@Override
-	public String customerLoginIn(String userName, String password) {
+	public String customerLogin(String userName, String password) {
 		int flag=0;
 		for(CustomerDTO cust : StaticDb.custList)
 		{

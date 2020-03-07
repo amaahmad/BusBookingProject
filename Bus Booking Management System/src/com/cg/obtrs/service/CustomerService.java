@@ -6,5 +6,5 @@ public interface CustomerService
 {
     public String customerSignUp(CustomerDTO custDto);
 
-	public String customerLoginIn(String userName, String password);
+	public String customerLogin(String userName, String password);
 }

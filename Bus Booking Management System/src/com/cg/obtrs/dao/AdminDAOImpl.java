@@ -3,7 +3,7 @@ package com.cg.obtrs.dao;
 import com.cg.obtrs.dto.AdminDTO;
 import com.cg.obtrs.dto.CustomerDTO;
 
-public class AdminDaoImpl implements AdminDAO {
+public class AdminDAOImpl implements AdminDAO {
 
 	@Override
 	public String adminSignUp(AdminDTO adminDto) {
@@ -15,7 +15,7 @@ public class AdminDaoImpl implements AdminDAO {
 	}
 
 	@Override
-	public String adminLoginIn(String userName, String password) {
+	public String adminLogin(String userName, String password) {
 		
 		int flag=0;
 		for(AdminDTO admin : StaticDb.adminList)

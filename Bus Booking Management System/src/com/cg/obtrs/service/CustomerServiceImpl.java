@@ -13,9 +13,9 @@ public class CustomerServiceImpl implements CustomerService
 	}
 
 	@Override
-	public String customerLoginIn(String userName, String password) {
+	public String customerLogin(String userName, String password) {
 	
-		return new CustomerDAOImpl().customerLoginIn(userName, password);
+		return new CustomerDAOImpl().customerLogin(userName, password);
 	}
    
 }
