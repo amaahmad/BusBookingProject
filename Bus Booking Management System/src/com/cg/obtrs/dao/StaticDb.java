@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-<<<<<<< HEAD
 import com.cg.obtrs.dto.BookingDTO;
 import com.cg.obtrs.dto.BusDTO;
 
