@@ -54,7 +54,7 @@ public class BookingDAOImpl implements BookingDAO
 	@Override
 	public String checkSeatAvailability(BookingDTO booking, BusDTO bus) {
 		
-		BusDTO busDetails = StaticDb.bookingList.get(bus.getBusId());
+		BusDTO busDetails = StaticDb.bookingList.get(bus.getBusId())
 	    
 	}
 	
