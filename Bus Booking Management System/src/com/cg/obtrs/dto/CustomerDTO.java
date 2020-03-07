@@ -8,7 +8,7 @@ public class CustomerDTO
  private Integer custID;
  private String custUserName;
  private String custPassword;
- 
+ fgdfgdfg
  public String getCustUserName() {
 	return custUserName;
 }

@@ -23,7 +23,7 @@ public class Starter {
       switch(choice)
       {
       case 1: 
-             
+             break;
       case 2 : System.out.println("1. Sign Up");
                System.out.println("2. Login Up");
                int custChoice = sc.nextInt();
@@ -43,7 +43,7 @@ public class Starter {
             	      Random random = new Random();
             	      int custId =  random.nextInt(1000);
             	     System.out.println(custService.customerSignUp(new CustomerDTO(name, phoneNo, email, custId, userName, password))); 
-               
+                       break;
            case 2:  
         	   System.out.println("Enter Username");
                userName = sc.next();
