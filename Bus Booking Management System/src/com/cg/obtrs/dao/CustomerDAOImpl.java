@@ -8,14 +8,14 @@ public class CustomerDAOImpl implements CustomerDAO
 	@Override
 	public String customerSignUp(CustomerDTO custDto) 
 	{
-	   	 StaticDb.custArr.add(custDto);
+	   	 StaticDb.custList.add(custDto);
 	   	 return "Signup Successfull";
     }
 
 	@Override
 	public String customerLoginIn(String userName, String password) {
 		int flag=0;
-		for(CustomerDTO cust : StaticDb.getCustArr())
+		for(CustomerDTO cust : StaticDb.custList)
 		{
 			if(cust.getCustUserName().equals(userName) && cust.getCustPassword().equals(password))
 			{

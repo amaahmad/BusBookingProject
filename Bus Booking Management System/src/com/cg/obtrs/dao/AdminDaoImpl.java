@@ -8,7 +8,7 @@ public class AdminDaoImpl implements AdminDAO {
 	@Override
 	public String adminSignUp(AdminDTO adminDto) {
 		
-		 StaticDb.adminArr.add(adminDto);
+		 StaticDb.adminList.add(adminDto);
 	   	 return "Signup Successfull";
 	}
 
@@ -16,7 +16,7 @@ public class AdminDaoImpl implements AdminDAO {
 	public String adminLoginIn(String userName, String password) {
 		
 		int flag=0;
-		for(AdminDTO admin : StaticDb.getAdminArr())
+		for(AdminDTO admin : StaticDb.adminList)
 		{
 			if(admin.getAdminUserName().equals(userName) && admin.getAdminPassword().equals(password))
 			{

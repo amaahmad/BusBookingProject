@@ -16,7 +16,7 @@ public class StaticDb
  
  static public Map<Integer,BusDTO> busList = new HashMap<>(); 
 
- static public ArrayList<AdminDTO> adminArr=new ArrayList<>();
+ static public ArrayList<AdminDTO> adminList=new ArrayList<>();
  
  static public Map<Integer, BookingDTO> bookingList = new HashMap<>();
 	
