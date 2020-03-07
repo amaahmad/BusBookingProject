@@ -24,7 +24,7 @@ public static ArrayList<CustomerDTO> getCustArr() {
 
 public static void setCustArr(ArrayList<CustomerDTO> custArr) {
 	StaticDb.custArr = custArr;
-	
+	System.out.println("");
 }
 
 
