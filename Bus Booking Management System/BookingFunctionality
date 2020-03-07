@@ -1,3 +1,33 @@
+// Ek booking class banaye the uska ek hi private attribute tha bookingId
+// aur uske getter setter the
+
+
+// ye hai class
+
+
+//public class Booking 
+//{
+//	private int bookingId;
+//	Booking()
+//	{
+//		super();
+//	}
+//	Booking(int bookingId)
+//	{
+//		super();
+//		this.bookingId=bookingId;
+//	}
+//	int getBookingId()
+//	{
+//		return this.bookingId;
+//	}
+//	void setBookingId(int bookingId)
+//	{
+//		this.bookingId=bookingId;
+//	}
+//}
+
+
 //	Ye List Bus ki hai jo dto mein available hogi bas add karna hai and 
 //	constructor mein saare attribute daal denge
 	String addBus(int busId, String source, String destination)
