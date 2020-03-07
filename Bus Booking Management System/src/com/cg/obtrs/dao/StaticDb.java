@@ -1,19 +1,19 @@
 package com.cg.obtrs.dao;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
+import com.cg.obtrs.dto.BookingDTO;
+import com.cg.obtrs.dto.BusDTO;
 import com.cg.obtrs.dto.CustomerDTO;
 
 public class StaticDb 
 {
- static public ArrayList<CustomerDTO> custArr = new ArrayList<>();
+ static public ArrayList<CustomerDTO> custList = new ArrayList<>();
+ 
+ static public Map<Integer,BusDTO> busList = new HashMap<>(); 
 
-public static ArrayList<CustomerDTO> getCustArr() {
-	return custArr;
-}
-
-public static void setCustArr(ArrayList<CustomerDTO> custArr) {
-	StaticDb.custArr = custArr;
+ static public Map<Integer, BookingDTO> bookingList = new HashMap<>();
 	
 }
  
-}

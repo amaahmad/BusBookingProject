@@ -8,8 +8,15 @@ public class CustomerDTO
  private Integer custID;
  private String custUserName;
  private String custPassword;
+ private int Age;
 
- public String getCustUserName() {
+ public int getAge() {
+	return Age;
+}
+public void setAge(int age) {
+	Age = age;
+}
+public String getCustUserName() {
 	return custUserName;
 }
 public void setCustUserName(String custUserName) {
