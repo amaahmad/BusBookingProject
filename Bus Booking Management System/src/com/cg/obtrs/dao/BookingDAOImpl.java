@@ -52,10 +52,14 @@ public class BookingDAOImpl implements BookingDAO
 		return "Rs."+ discountedFare;
 	}
 	@Override
+    //Function that returns the total number of seats available in the given bus
 	public String checkSeatAvailability(BookingDTO booking, BusDTO bus) {
 		
-		BusDTO busDetails = StaticDb.bookingList.get(bus.getBusId());
-	    
+		BookingDTO busDetails = StaticDb.bookingList.get(bus.getBusId());
+		BusDTO busDto = StaticDb.busList.get(bus.getBusId());
+		int seatsBooked = busDetails.getSeatsBooked();
+		int seatsAvailable = busDto.getTotalSeats()-seatsBooked;
+	 	return "Number of seats available in the selected Bus ="+seatsAvailable;    
 	}
 	
 

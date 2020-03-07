@@ -8,19 +8,18 @@ public class BusDTO
   private String sourceStation;
   private String destinationStation;
   private String busType;
-  private Integer totalSeats;
+  private static Integer totalSeats;
   private Float fare;
   private String SeatNo;
   
   
-public BusDTO(Integer busId, String sourceStation, String destinationStation, String busType, Integer maxSeats,
+public BusDTO(Integer busId, String sourceStation, String destinationStation, String busType,
 		Float fare, String seatNo) {
 	super();
 	this.BusId = busId;
 	this.sourceStation = sourceStation;
 	this.destinationStation = destinationStation;
 	this.busType = busType;
-	this.totalSeats = maxSeats;
 	this.fare = fare;
 	this.SeatNo = seatNo;
 	
@@ -53,11 +52,8 @@ public String getBusType() {
 public void setBusType(String busType) {
 	this.busType = busType;
 }
-public Integer getMaxSeats() {
+public static Integer getTotalSeats() {
 	return totalSeats;
-}
-public void setMaxSeats(Integer totalSeats) {
-	this.totalSeats = totalSeats;
 }
 public Float getFare() {
 	return fare;
