@@ -1,0 +1,43 @@
+//	Ye List Bus ki hai jo dto mein available hogi bas add karna hai and 
+//	constructor mein saare attribute daal denge
+	String addBus(int busId, String source, String destination)
+	{
+		List<Bus> bus=new ArrayList<Bus>();
+		bus.add(new Bus(busId,source,destination));
+		return "Bus Added Successfully";
+	}
+//	Updation saare alag banana bas copy paste kar dena
+//	aur UI mein menu driven bana dena
+	String updateBusById(int busId)
+	{
+		bus.setBusId(busId);
+		return "Bus Id Updated successfully";
+	}
+	String updateBusBySource(String source)
+	{
+		bus.setSource(source);
+		return "Bus source updted successfully";
+	}
+	String updateBusByDestination(String destination)
+	{
+		bus.setDestiation(destination);
+		return "Bus Destination Updated Successfully";
+	}
+	//Iska samajh nahi aaraha tha toh blank chhod diye
+	String generateReport(int bookingId)
+	{
+		return "Report Generated Successfully";
+	}
+	//cancel mein pura row hi delete kar de rahe ha
+	String cancelBooking(int bookingId)
+	{
+		List<Booking> booking=new ArrayList<Booking>();
+		for(int i=0;i<booking.size();i++)
+		{
+			if(booking.get(i).getBookingId()==bookingId)
+			{
+				booking.remove(i);
+			}	
+		}
+		return "Ticket has been canceled";
+	}
