@@ -9,7 +9,9 @@ public class AdminDaoImpl implements AdminDAO {
 	public String adminSignUp(AdminDTO adminDto) {
 		
 		 StaticDb.adminList.add(adminDto);
+		 System.out.println("");
 	   	 return "Signup Successfull";
+	   	 
 	}
 
 	@Override
