@@ -61,6 +61,14 @@ public class BookingDAOImpl implements BookingDAO
 		int seatsAvailable = busDto.getTotalSeats()-seatsBooked;
 	 	return "Number of seats available in the selected Bus ="+seatsAvailable;    
 	}
+	@Override
+	public String cancelBooking(int busId) throws CustomException 
+	{
+		BookingDTO busDetails = StaticDb.bookingList.get(busId);
+		BusDTO busDto = StaticDb.busList.get(busId);
+        return "";
+	}
+	
 	
 
 	

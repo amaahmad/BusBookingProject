@@ -17,7 +17,7 @@ public class Starter {
 		 while(x>0)
 	      {
       System.out.println("1. Login as Admin");
-      System.out.println("2.Customer");
+      System.out.println("2. Login as Customer");
       int choice = sc.nextInt();
      
       switch(choice)
@@ -44,7 +44,7 @@ public class Starter {
             	      int custId =  random.nextInt(1000);
             	     System.out.println(custService.customerSignUp(new CustomerDTO(name, phoneNo, email, custId, userName, password))); 
                        break;
-           case 2:  
+               case 2:  
         	   System.out.println("Enter Username");
                userName = sc.next();
                System.out.println("Enter Password");
