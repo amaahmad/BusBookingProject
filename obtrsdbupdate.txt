@@ -1,0 +1,26 @@
+create table admin (admin_name varchar(25), admin_id number(10) primary key, admin_phoneno number(12), admin_email varchar(35), admin_username varchar(30), admin_password varchar(30));
+
+select * from admin;
+select * from booking;
+
+select * from bus;
+commit;
+
+
+create table BookingEntity_passengerNames (BookingEntity_BOOKING_ID number(10), passengerName varchar(70));
+
+delete from booking;
+
+UPDATE bus
+SET SEATSBOOKED = 0;
+
+ALTER TABLE BookingEntity_passengerNames RENAME COLUMN passengerName TO passengerNames;
+
+alter table bus drop column seatno;
+
+alter table booking drop column age;
+select * from BookingEntity_passengerNames;
+commit;
+
+ALTER TABLE booking
+ADD seat_no varchar(25);

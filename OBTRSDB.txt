@@ -1,0 +1,40 @@
+insert into bus values(111 ,'Delhi','Lucknow', TO_DATE('2020/05/03 21:02:44', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2020/05/04 6:02:44', 'yyyy/mm/dd hh24:mi:ss'),'Volvo',35,'900.0F','16(B)',11);
+
+
+insert into bus values(120 ,'Pune','Mumbai', TO_DATE('2020/08/13 5:20:30', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2020/08/13 8:12:00', 'yyyy/mm/dd hh24:mi:ss'),'AC SLEEPER',45,'400.0F','17(B)',20);
+
+
+insert into bus values(405 ,'Chennai','Delhi', TO_DATE('2020/05/12 15:20:30', 'yyyy/mm/dd hh24:mi:ss'), TO_DATE('2020/05/13 8:12:00', 'yyyy/mm/dd hh24:mi:ss'),'AC SEATER',40,'1400.0F','19(A)',10);
+
+
+select * from bus;
+
+create table Booking(bus_id number(10), passenger_names varchar(225), seats_booked number(10), total_fare varchar(20));
+
+delete from booking;
+insert into Booking values(111, 'Amaan,Sumit,Yash', 3, '3200', null, 1002);
+insert into Booking values(120, 'Amaan,Sumit,Yash', 3, '2200', null, 7850);
+insert into Booking values(111, 'Mehtab,Kumar,Shivam', 3, '5200', null, 7834);
+
+select * from booking;
+
+delete from bus where busid = 11;
+
+ALTER TABLE Booking
+  ADD booking_id number(10);
+
+ALTER TABLE Booking ADD CONSTRAINT my_constraint PRIMARY KEY(booking_id);
+
+create table BookingDTO_passengerNames ( BookingDTO_BOOKING_ID number(10), passengerNames varchar(30));
+insert into BookingDTO_passengerNames (BookingDTO_BOOKING_ID, passengerNames) values (?, ?)
+select * from Booking; 
+select * from BookingDTO_passengerNames;
+select b1_0.busId, b1_0.SeatNo, b1_0.boardingTime, b1_0.busType, b1_0.destinationStation, b1_0.dropTime, b1_0.fare, b1_0.seatsBooked, b1_0.sourceStation, b1_0.totalSeats from Bus b1_0 where b1_0.busId = 111;
+select b1_0.busId, b1_0.SeatNo, b1_0.boardingTime, b1_0.busType, b1_0.destinationStation, b1_0.dropTime, b1_0.fare, b1_0.seatsBooked, b1_0.sourceStation, b1_0.totalSeats from Bus b1_0 where b1_0.busId = 111 
+select b1_0.busId, b1_0.SeatNo, b1_0.boardingTime, b1_0.busType, b1_0.destinationStation, b1_0.dropTime, b1_0.fare, b1_0.seatsBooked, b1_0.sourceStation, b1_0.totalSeats from Bus as b1_0 where b1_0.busId = ?
+
+
+E:\app\Zain\virtual\product\12.2.0\dbhome_1\network\admin
+
+create table Customer(cust_id number(10) primary key, cust_name varchar(25), cust_phonenumber number(15), cust_email varchar(30), cust_username varchar(25), cust_password varchar(25), cust_feedback varchar(100), cust_rating number(5), cust_age number(5));
+select * from customer;
